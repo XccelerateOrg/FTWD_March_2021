@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Tab Name -->
+    <title>My First Website</title>
+
+    <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <style>
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 3vw;
+      }
+      a:hover {
+        color: lightblue;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1e7d8;
+        color: white;
+        text-align: center;
+      }
+      .grid {
+        display: grid;
+        height: 10vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+      }
+      .chairWithPot {
+        height: 22vw;
+        grid-column: 5 / span 1;
+      }
+      .grid {
+        display: grid;
+        height: 10vw;
+        margin: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+      .text {
+        margin: 20px;
+      }
+      .photo {
+        padding: 15px;
+      }
+    </style>
+    <!-- Link style sheet here -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- All your content should go in between the body tags -->
+  <body>
+    <!-- Header Beginning -->
+    <header>
+      <center>
+        <h1 class="header">My first website!</h1>
+        <br />
+        <a href="home.html">Home</a>
+        <a href="information.html">Information</a>
+        <a href="contact.html">Contact</a>
+      </center>
+    </header>
+    <br />
+    <br />
+    <!-- Main -->
+    <main>
+      <!-- Text -->
+      <div class="text">
+        <h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Praesent euismod risus lorem. Donec laoreet
+          arcu diam, ut laoreet elit faucibus sit amet.
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Suspendisse fermentum consequat nisi, vel
+          faucibus orci imperdiet eu. Morbi efficitur
+          ultrices lacus. Class aptent taciti sociosqu ad
+          litora torquent per conubia nostra, per inceptos
+          himenaeos. Morbi laoreet efficitur tellus quis
+          commodo. Duis elementum, erat eu dictum
+          ullamcorper, justo velit auctor tortor, at congue
+          nulla massa sed urna. Suspendisse ultrices urna in
+          ipsum varius auctor. Phasellus sagittis quam nec
+          pretium ultrices. Ut ut lectus sed est fringilla
+          ultrices. Nam imperdiet lacinia erat, et dictum
+          ante egestas sed. Vivamus risus tellus, fermentum
+          ut odio sed, sollicitudin commodo mi. Sed non
+          molestie est. Morbi vitae lacus nec velit lacinia
+          congue. Donec ipsum leo, pretium et tincidunt a,
+          congue vitae lorem. Pellentesque vestibulum, magna
+          eu lobortis ultrices, lacus tellus dignissim
+          lacus, at ornare mauris eros eget dui.
+          Pellentesque quis lobortis tortor. Phasellus a
+          felis sed velit aliquet ullamcorper in ultricies
+          tortor. Vivamus arcu ex, scelerisque vitae
+          fringilla ac, consequat eu diam.
+        </h3>
+      </div>
+      <!-- Text -->
+    </main>
+    <!-- Main -->
+
+    <br />
+    <br />
+    <!-- Grid -->
+    <div class="grid">
+      <img
+        class="chairWithPot"
+        src="https://www.dropbox.com/s/ykszd572a1dtbgg/ChairWithPot.png?raw=1"
+      />
+    </div>
+    <!-- Grid -->
+
+    <!--  -->
+    <!-- Footer -->
+    <div class="footer">
+      <h2>Xccelerate 2021</h2>
+    </div>
+    <!-- Footer -->
+  </body>
+</html>

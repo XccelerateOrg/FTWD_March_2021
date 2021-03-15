@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Tab Name -->
+    <title>My First Website</title>
+
+    <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <!-- Link style sheet here -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 2vw;
+      }
+      a:hover {
+        color: lightblue;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1e7d8;
+        color: white;
+        text-align: center;
+      }
+      .header {
+        font-size: 5vw;
+      }
+      textarea,
+      input[type="text"] {
+        font-family: "Reenie Beanie", cursive;
+        font-size: 2.5vw;
+        padding: 12px 20px;
+        border: 2px solid #ccc;
+        background-color: #f8f8f8;
+      }
+      textarea {
+        width: 310px;
+        height: 50px;
+      }
+      input[type="text"] {
+        width: 130px;
+        height: 20px;
+      }
+      button {
+        background-color: white;
+        border: 1.5px solid black;
+        font-family: "Reenie Beanie", cursive;
+        padding: 12px;
+      }
+    </style>
+  </head>
+
+  <!-- All your content should go in between the body tags -->
+  <body>
+    <!-- Header Beginning -->
+    <header>
+      <center>
+        <h1 class="header">My first website!</h1>
+        <br />
+        <a href="home.html">Home</a>
+        <a href="information.html">Information</a>
+        <a href="contact.html">Contact</a>
+      </center>
+    </header>
+    <!-- Header Ending -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Main -->
+    <main>
+      <center>
+        <h1>Contact Form</h1>
+        <form
+          action="https://formspree.io/f/maylrlre"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+          />
+          <br />
+          <br />
+          <textarea
+            type="text"
+            name="message"
+            placeholder="Message"
+          ></textarea>
+          <br />
+
+          <input type="checkbox" id="contact" />
+
+          <label for="contact">Need a reply</label><br />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </center>
+    </main>
+    <!-- Main -->
+    <!-- Footer -->
+    <div class="footer">
+      <h2>Xccelerate 2021</h2>
+    </div>
+    <!-- Footer -->
+  </body>
+</html>

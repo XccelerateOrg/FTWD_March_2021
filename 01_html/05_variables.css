@@ -1,0 +1,24 @@
+/* root can be useful for declaring global CSS variables: */
+:root {
+  /* A variable is declared with two leading slashes: --var-name. */
+  --primary-border-color: red;
+  --primary-border-style: solid;
+  --primary-border-width: 3px;
+  --row-height: 1.5rem;
+  --visible-rows: 3;
+}
+/* You can even reference variables in the calc function. We have a container with six rows. We want the container to be tall enough to show three visible rows, and the rest should overflow and be accessed via scroll.  */
+.grid {
+  margin: 10px;
+  border: 1px solid red;
+  height: calc(var(--row-height) * var(--visible-rows));
+  overflow: auto;
+  width: 10rem;
+}
+.row {
+  /* A variable is referenced with the var function: var(--var-name). */
+  line-height: var(--row-height);
+}
+.red {
+  color: var(--primary-border-color);
+}

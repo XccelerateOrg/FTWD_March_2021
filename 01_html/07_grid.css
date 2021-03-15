@@ -1,0 +1,22 @@
+.container {
+  width: 300px;
+}
+.inlineBlock {
+  background-color: yellow;
+  display: inline-block;
+  width: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+} 
+
+.flexBlock {
+  background-color: yellow;
+  display: inline-flex;
+  width: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

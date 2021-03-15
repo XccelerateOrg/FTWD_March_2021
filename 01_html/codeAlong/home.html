@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Tab Name -->
+    <title>My First Website</title>
+
+    <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <style>
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 2vw;
+      }
+      a:hover {
+        color: lightblue;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1e7d8;
+        color: white;
+        text-align: center;
+      }
+      .header {
+        font-size: 5vw;
+      }
+      li {
+        font-size: 4vw;
+      }
+      .grid {
+        display: grid;
+        height: 10vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+      }
+      .itemThree {
+        grid-column: 3 / span 1;
+        height: 100px;
+        width: 100px;
+      }
+      .itemFive {
+        grid-column: 5 / span 1;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+    <!-- Link style sheet here -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- All your content should go in between the body tags -->
+  <body>
+    <!-- Header Beginning -->
+    <header>
+      <center>
+        <h1 class="header">My first website!</h1>
+        <br />
+        <a href="home.html">Home</a>
+        <a href="information.html">Information</a>
+        <a href="contact.html">Contact</a>
+      </center>
+    </header>
+    <!-- Header Ending -->
+    <!-- Grid -->
+    <div class="grid">
+      <img
+        class="itemFive"
+        src="https://www.dropbox.com/s/qc7dm62nkzmsvyu/Hanger.png?raw=1"
+      />
+    </div>
+    <!-- Grid -->
+
+    <!-- Main Beginning -->
+    <main>
+      <ul>
+        <li>Create an HTML page</li>
+        <li>Link it to another page</li>
+        <li>Add an image to your HTML page</li>
+      </ul>
+    </main>
+    <!-- Main Ending -->
+
+    <!-- Grid -->
+    <!-- <div class="grid">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div> -->
+    <!-- Grid -->
+
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Grid -->
+    <div class="grid">
+      <img
+        class="itemThree"
+        src="https://www.dropbox.com/s/ezz2qhy8kpax3up/Lunchbox.png?raw=1"
+      />
+    </div>
+    <!-- Grid -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <h2>Xccelerate 2021</h2>
+    </div>
+    <!-- Footer -->
+  </body>
+</html>

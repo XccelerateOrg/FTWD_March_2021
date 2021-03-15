@@ -1,0 +1,41 @@
+/* Position: Relative */
+.block {
+  background-color: red;
+  height: 3rem;
+  width: 3rem;
+}
+.green {
+  background-color: green;
+}
+.relative {
+  background-color: blue;
+  /* The CSS position property determines how an element is positioned. A relatively positioned element is positioned relative to where it would normally appear in the flow of the document. */
+  position: relative;
+  left: 10px;
+  top: 10px;
+  right: 0;
+  height: 3rem;
+  width: 3rem;
+}
+/* Position: Relative */
+
+/* Position: Absolute */
+.outer {
+  background-color: red;
+  height: 10rem;
+  width: 10rem;
+}
+.inner {
+  background-color: blue;
+  height: 7rem;
+  width: 7rem;
+}
+.absolute {
+  background-color: blue;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  height: 3rem;
+  width: 3rem;
+}
+/* Position: Absolute */
