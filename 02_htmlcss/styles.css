@@ -1,0 +1,122 @@
+/* root can be useful for declaring global CSS variables: */
+:root {
+  /* A variable is declared with two leading slashes: --var-name. */
+  --primary-border-color: red;
+  --primary-border-style: solid;
+  --primary-border-width: 3px;
+  --row-height: 1.5rem;
+  --visible-rows: 3;
+}
+/* You can even reference variables in the calc function. We have a container with six rows. We want the container to be tall enough to show three visible rows, and the rest should overflow and be accessed via scroll.  */
+.grid {
+  margin: 10px;
+  border: 1px solid red;
+  height: calc(var(--row-height) * var(--visible-rows));
+  overflow: auto;
+  width: 10rem;
+}
+.row {
+  /* A variable is referenced with the var function: var(--var-name). */
+  line-height: var(--row-height);
+}
+.red {
+  color: var(--primary-border-color);
+}
+.shadow {
+  box-shadow: 5px 5px 10px black;
+  background: #cccccc;
+  width: 10rem;
+  height: 5rem;
+}
+.float {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  float: left;
+}
+/* Position: Relative */
+.block {
+  background-color: red;
+  height: 3rem;
+  width: 3rem;
+}
+.green {
+  background-color: green;
+}
+.relative {
+  background-color: blue;
+  /* The CSS position property determines how an element is positioned. A relatively positioned element is positioned relative to where it would normally appear in the flow of the document. */
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+/* Position: Relative */
+
+/* Position: Absolute */
+.outer {
+  background-color: red;
+  height: 10rem;
+  width: 10rem;
+}
+.inner {
+  background-color: blue;
+  height: 7rem;
+  width: 7rem;
+}
+.core {
+  background-color: green;
+  position: absolute;
+  right: 0;
+  height: 4rem;
+  width: 4rem;
+}
+/* Position: Absolute */
+
+/* Box Sizing */
+.box-size {
+  width: 160px;
+  height: 80px;
+  padding: 20px;
+  border: 8px solid red;
+  background: yellow;
+}
+.content-box {
+  box-sizing: content-box;
+  /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+     Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+     Content box width: 160px
+     Content box height: 80px */
+}
+
+.border-box {
+  box-sizing: border-box;
+  /* Total width: 160px
+     Total height: 80px
+     Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
+     Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
+}
+/* Box Sizing */
+aside {
+  background: seagreen;
+}
+footer {
+  background: darkslateblue;
+}
+main {
+  background: slategray;
+}
+.container {
+  width: 300px;
+}
+.container p {
+  color: blue;
+}
+.highlight {
+  background-color: yellow;
+  display: inline-block;
+  width: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

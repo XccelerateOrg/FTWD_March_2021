@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <!-- Tab Name -->
-    <title>My First Website</title>
+    <title>Kellan</title>
 
     <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
     <meta
@@ -12,23 +12,6 @@
     />
 
     <style>
-      a {
-        color: black;
-        text-decoration: none;
-        font-size: 3vw;
-      }
-      a:hover {
-        color: lightblue;
-      }
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #f1e7d8;
-        color: white;
-        text-align: center;
-      }
       .grid {
         display: grid;
         height: 10vw;
@@ -49,20 +32,72 @@
         margin: 20px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       }
-      .text {
-        margin: 20px;
+      .infoText {
+        margin: 50px;
       }
       .photo {
         padding: 15px;
       }
-      .ocean {
-        height: 100px;
+      .gallery {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        display: grid;
+        margin: 20px;
+      }
+      /* .photoOne {
+        grid-column: 2 / span 1;
+        margin: 15px;
+      } */
+      .photoContainerOne {
+        position: relative;
+        text-align: center;
+
+        grid-column: 2 / span 1;
+        margin: 15px;
+      }
+      .subtitleOne {
+        display: none;
+        position: absolute;
+        font-size: 3vw;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+      }
+      .subtitleOne:hover {
+        display: block;
+      }
+      .photoContainerTwo {
+        grid-column: 3 / span 1;
+        margin: 15px;
+      }
+      .photoContainerThree {
+        grid-column: 4 / span 1;
+        margin: 15px;
+      }
+      .photoContainerOne:hover {
+        transition: all 0.3s ease;
+        opacity: 0.5;
+      }
+      .photoContainerTwo:hover {
+        transition: all 0.3s ease;
+        opacity: 0.5;
+      }
+      .photoContainerThree:hover {
+        transition: all 0.3s ease;
+        opacity: 0.5;
       }
     </style>
+    <link
+      rel="shortcut icon"
+      href="./assets/media/Laundry.ico"
+      type="image/x-icon"
+    />
     <!-- Link style sheet here -->
     <link
       rel="stylesheet"
-      href="../assets/css/styles.css"
+      href="assets/css/globalStyles.css"
     />
   </head>
 
@@ -72,10 +107,12 @@
     <header>
       <center>
         <h1 class="header">My first website!</h1>
-        <br />
-        <a href="home.html">Home</a>
-        <a href="information.html">Information</a>
-        <a href="contact.html">Contact</a>
+        <a class="navLink" href="home.html">Home</a>
+        <a class="navLink" href="information.html"
+          >Information</a
+        >
+        <a class="navLink" href="story.html">Story</a>
+        <a class="navLink" href="contact.html">Contact</a>
       </center>
     </header>
     <br />
@@ -83,7 +120,9 @@
     <!-- Main -->
     <main>
       <!-- Text -->
-      <div class="text">
+      <div class="infoText">
+        <h2>Hello</h2>
+        <h4>How's it going?</h4>
         <h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing
           elit. Praesent euismod risus lorem. Donec laoreet
@@ -117,11 +156,33 @@
     </main>
     <!-- Main -->
 
-    <br />
+    <!-- Gallery Section -->
+
+    <div class="gallery">
+      <div class="photoContainerOne">
+        <img
+          class="photoOne"
+          src="assets/media/samplePic.png"
+        />
+      </div>
+      <div class="photoContainerTwo">
+        <img
+          class="photoTwo"
+          src="assets/media/samplePic.png"
+        />
+      </div>
+      <div class="photoContainerThree">
+        <img
+          class="photoThree"
+          src="assets/media/samplePic.png"
+        />
+      </div>
+    </div>
+    <!-- Gallery Section -->
+
     <br />
     <!-- Grid -->
     <div class="grid">
-      <img class="ocean" src="../assets/media/ocean.jpg" />
       <img
         class="chairWithPot"
         src="https://www.dropbox.com/s/ykszd572a1dtbgg/ChairWithPot.png?raw=1"
@@ -129,7 +190,6 @@
     </div>
     <!-- Grid -->
 
-    <!--  -->
     <!-- Footer -->
     <div class="footer">
       <h2>Xccelerate 2021</h2>

@@ -3,40 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <!-- Tab Name -->
-    <title>My First Website</title>
+    <title>Kellan</title>
 
     <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-
+    <link
+      rel="shortcut icon"
+      href="./assets/media/Laundry.ico"
+      type="image/x-icon"
+    />
     <!-- Link style sheet here -->
     <link
       rel="stylesheet"
-      href="../assets/css/styles.css"
+      href="assets/css/globalStyles.css"
     />
     <style>
-      a {
-        color: black;
-        text-decoration: none;
-        font-size: 2vw;
-      }
-      a:hover {
-        color: lightblue;
-      }
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: #f1e7d8;
-        color: white;
-        text-align: center;
-      }
-      .header {
-        font-size: 5vw;
-      }
       textarea,
       input[type="text"] {
         font-family: "Reenie Beanie", cursive;
@@ -53,12 +37,6 @@
         width: 130px;
         height: 20px;
       }
-      button {
-        background-color: white;
-        border: 1.5px solid black;
-        font-family: "Reenie Beanie", cursive;
-        padding: 12px;
-      }
     </style>
   </head>
 
@@ -68,10 +46,12 @@
     <header>
       <center>
         <h1 class="header">My first website!</h1>
-        <br />
-        <a href="home.html">Home</a>
-        <a href="information.html">Information</a>
-        <a href="contact.html">Contact</a>
+        <a class="navLink" href="home.html">Home</a>
+        <a class="navLink" href="information.html"
+          >Information</a
+        >
+        <a class="navLink" href="story.html">Story</a>
+        <a class="navLink" href="contact.html">Contact</a>
       </center>
     </header>
     <!-- Header Ending -->

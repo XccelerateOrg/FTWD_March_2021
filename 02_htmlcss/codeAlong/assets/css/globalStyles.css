@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap");
+body {
+  background-color: beige;
+  font-family: "Reenie Beanie", cursive;
+  margin: 80px;
+}
+
+.header {
+  font-size: 5vw;
+  color: #3b7b80;
+}
+.navLink {
+  color: #3b7b80;
+  margin: 20px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1e7d8;
+  color: white;
+  text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 2vw;
+}
+a:hover {
+  color: lightblue;
+}
+
+button {
+  background-color: white;
+  border: 1.5px solid black;
+  font-family: "Reenie Beanie", cursive;
+  padding: 12px;
+}

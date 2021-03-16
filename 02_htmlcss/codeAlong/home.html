@@ -3,18 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <!-- Tab Name -->
-    <title>My First Website</title>
+    <title>Kellan</title>
 
     <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    
+
+    <style>
+      /* A percentage of the full viewport width. 10vw will resolve to 10% of the current viewport width, or 48px on a phone that is 480px wide. */
+      .header {
+        font-size: 5vw;
+      }
+      li {
+        font-size: 4vw;
+      }
+      .grid {
+        display: grid;
+        height: 10vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+      }
+      .itemThree {
+        grid-column: 3 / span 1;
+        height: 100px;
+        width: 100px;
+      }
+      .itemFive {
+        grid-column: 5 / span 1;
+        height: 100px;
+        width: 100px;
+      }
+      main {
+        margin: 50px;
+      }
+    </style>
     <!-- Link style sheet here -->
     <link
+      rel="shortcut icon"
+      href="./assets/media/Laundry.ico"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
-      href="../assets/css/styles.css"
+      href="assets/css/globalStyles.css"
     />
   </head>
 
@@ -24,10 +61,12 @@
     <header>
       <center>
         <h1 class="header">My first website!</h1>
-        <br />
-        <a href="home.html">Home</a>
-        <a href="information.html">Information</a>
-        <a href="contact.html">Contact</a>
+        <a class="navLink" href="home.html">Home</a>
+        <a class="navLink" href="information.html"
+          >Information</a
+        >
+        <a class="navLink" href="story.html">Story</a>
+        <a class="navLink" href="contact.html">Contact</a>
       </center>
     </header>
     <!-- Header Ending -->
@@ -51,14 +90,14 @@
     <!-- Main Ending -->
 
     <!-- Grid -->
-    <div class="grid">
+    <!-- <div class="grid">
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
-    </div>
+    </div> -->
     <!-- Grid -->
 
     <br />
