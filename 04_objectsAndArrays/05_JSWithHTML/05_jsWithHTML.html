@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Tab Name -->
+    <title>My First Website</title>
+
+    <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Link style sheet here -->
+    <link rel="stylesheet" href="05_jsWithHTML.css" />
+  </head>
+
+  <!-- All your content should go in between the body tags -->
+  <body class="container">
+    <!-- Defer - The script loads “in the background”, and then runs when the DOM is fully built. -->
+
+    <h1 id="title">Hello</h1>
+
+    <hr />
+    <h5>Add an alert to the button</h5>
+    <button
+      id="alertBtn"
+      class="btn btn-primary"
+      type="button"
+    >
+      Alert
+    </button>
+
+    <hr />
+    <h5>Manipulate this list</h5>
+    <ul>
+      <li>Egg</li>
+      <li>Milk</li>
+
+      <li>Butter</li>
+      <li>Flour</li>
+    </ul>
+
+
+    <hr />
+    <h5>Manipulate this paragraph tag</h5>
+    <p id="message">Hello</p>
+    <hr />
+    <h5>Manipulate this list</h5>
+    <ul>
+      <li class="addHighlight">Egg</li>
+       <li class="addHighlight"Milk</li>
+
+      <li class="addHighlight">Butter</li>
+      <li class="addHighlight">Flour</li>
+    </ul>
+
+
+    <!-- Script tag should be right before the ending body tag -->
+    <script
+      type="application/javascript"
+      src="05_jsWithHTML.js"
+      async
+      defer
+    ></script>
+    <script type="application/javascript" async defer>
+      console.log("Open your console to see this message");
+      let titleHeader = document.getElementById("title");
+      console.log(titleHeader);
+      titleHeader.style.border = "2px solid #000000";
+      titleHeader.style.color = "blue";
+      function getAlert() {
+        console.log("hey");
+        alert("yo!");
+      }
+      document
+        .getElementById("alertBtn")
+        .addEventListener("click", getAlert);
+    </script>
+  </body>
+</html>
