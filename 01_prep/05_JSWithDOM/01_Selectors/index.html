@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Tab Name -->
+    <title>My First Website</title>
+
+    <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <!-- Link style sheet here -->
+  </head>
+
+  <!-- All your content should go in between the body tags -->
+  <body>
+    <h1 id="title">Hello</h1>
+    <ul>
+      <li>Eggs</li>
+      <li>Milk</li>
+      <li>Cheese</li>
+    </ul>
+    <div class="item">hello</div>
+    <div class="item">hello</div>
+    <div class="item">hello</div>
+
+    <div id="result">Sample text</div>
+    <script async defer type="text/javascript">
+      console.log("hello");
+      /**********************************************
+       * Selectors
+       * ==================================
+       ***********************************************/
+      // Query Selectors
+
+      let grabTag = document.querySelector("h1");
+      let itemTag = document.querySelector(".item");
+      let titleTag = document.querySelector("#title");
+      console.log("Title Tag: ", titleTag);
+      console.log("Tag element: ", grabTag);
+      console.log("Item tag: ", itemTag);
+      let grabAllLists = document.querySelectorAll("li");
+      console.log("Li tags: ", grabAllLists);
+      let grabByClass = document.getElementsByClassName(
+        "item"
+      );
+      console.log("Item Class: ", grabByClass);
+      let grabByTag = document.getElementsByTagName("li");
+
+      let grabById = document.getElementById("title");
+      console.log("Id element: ", grabById);
+      // Loop!
+      for (let i = 0; i < grabAllLists.length; i++) {
+        console.log("Current index: ", i);
+        console.log("Item: ", grabAllLists[i]);
+        grabAllLists[i].style.color = "blue";
+      }
+    </script>
+  </body>
+</html>
