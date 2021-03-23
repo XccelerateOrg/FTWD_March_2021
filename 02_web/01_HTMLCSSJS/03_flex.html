@@ -1,0 +1,164 @@
+<!-- Definitely a learning by doing kind of thing! -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Tab Name -->
+    <title>My First Website</title>
+
+    <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <!-- Link style sheet here -->
+    <style>
+      :root {
+        --backgroundColor: black;
+        --navColor: beige;
+        --gridWidth: 90vw;
+        --gridHeight: 70vh;
+      }
+      body {
+        background-color: var(--backgroundColor);
+      }
+      .navColor {
+        color: var(--navColor);
+      }
+
+      .grid {
+        height: var(--gridHeight);
+        width: var(--gridWidth);
+        width: 100%;
+        /*  */
+        position: absolute;
+        grid-auto-flow: column;
+        bottom: 5vh;
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: 1fr;
+      }
+
+      .gridColOne {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        /* border: 1px red solid; */
+        width: 45vw;
+      }
+      .gridColTwo {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+        /* border: 1px red solid; */
+        width: 45vw;
+      }
+
+      /* <!-- Definitely a learning by doing kind of thing! -->
+      /* Flex */
+      /* Flexbox is a bit more easier to manipulate, it's not set to the specific rows and columns so it's easier for you to change your mind later */
+      .flexContainer {
+        display: flex;
+        /* In a row container */
+        flex-direction: row;
+        height: var(--gridHeight);
+      }
+
+      .border {
+        border: 1px beige solid;
+      }
+
+      /* in column one, create another flex container */
+      /* that container should have a flex-direction of column (so make the first row into two columns) */
+      /* Not specifying the number of boxes */
+      .colOne {
+        display: flex;
+        flex: 2 100px;
+        flex-direction: column;
+      }
+
+      .rowOne {
+        flex: 1 100px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .rowOneColOne {
+        flex: 1 100px;
+      }
+      .rowOneColTwo {
+        flex: 1 100px;
+      }
+      /* Easy to add columns */
+      .rowOneColThree {
+        flex: 1 100px;
+      }
+      .rowTwo {
+        flex: 1 100px;
+        display: flex;
+        flex-direction: row;
+      }
+      .rowTwoColOne {
+        flex: 1 100px;
+      }
+      .rowTwoColTwo {
+        flex: 1 100px;
+      }
+
+      .rowThree {
+        flex: 1 100px;
+        display: flex;
+        flex-direction: row;
+      }
+      .rowThreeColOne {
+        flex: 1 100px;
+      }
+      .rowThreeColTwo {
+        flex: 1 100px;
+      }
+
+      .map {
+        width: 40vw;
+        grid-column: 2 / span 1;
+        /* flex: 1 100px; */
+      }
+      .border {
+        border: 2px red solid;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Test -->
+    <!-- <div class="grid">
+      <div class="gridColOne"></div>
+      <div class="gridColTwo"></div>
+    </div> -->
+    <!-- Test -->
+    <center>
+      <div class="grid">
+        <div class="gridColOne border">
+          <div class="flexContainer border">
+            <div class="colOne border">
+              <div class="rowOne border">
+                <div class="rowOneColOne border"></div>
+                <div class="rowOneColTwo border"></div>
+                <!-- <div class="rowOneColThree border"></div> -->
+              </div>
+              <div class="rowTwo border">
+                <div class="rowTwoColOne border"></div>
+                <div class="rowTwoColTwo border"></div>
+              </div>
+              <div class="rowThree border">
+                <div class="rowThreeColOne border"></div>
+                <div class="rowThreeColTwo border"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gridColTwo">
+          <img src="images/map.png" class="map border" />
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

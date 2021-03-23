@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Tab Name -->
+    <title>My First Website</title>
+
+    <!-- Viewport is the user's visible area of web page sets the initial zoom level when the page is first loaded by the browser. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <!-- Link style sheet here -->
+    <style>
+      :root {
+        --gridWidth: 90vw;
+        --gridHeight: 70vh;
+        --backgroundColor: beige;
+        --navColor: #3b7b80;
+      }
+
+      body {
+        background-color: var(--backgroundColor);
+      }
+      .navColor {
+        color: var(--navColor);
+        z-index: 10;
+      }
+
+      .flexContainer {
+        margin: 2vh;
+        height: var(--gridHeight);
+        width: var(--gridWidth);
+        display: flex;
+      }
+      .lunchBoxImg {
+        position: fixed;
+        height: 10vh;
+        top: 45vh;
+        left: 15vw;
+      }
+
+      .hangerImg {
+        position: fixed;
+        height: 10vh;
+        top: 20vh;
+        right: 20vw;
+      }
+
+      .stoolImg {
+        position: fixed;
+        height: 25vh;
+        bottom: 0;
+        right: 10vw;
+      }
+    </style>
+  </head>
+
+  <!-- All your content should go in between the body tags -->
+  <body>
+    <img class="lunchBoxImg" src="images/Lunchbox.png" />
+    <img class="hangerImg" src="images/Hanger.png" />
+    <img class="stoolImg" src="images/ChairWithPot.png" />
+  </body>
+</html>
